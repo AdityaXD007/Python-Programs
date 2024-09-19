@@ -1,0 +1,5 @@
+x = int(input("Enter value for x: "))
+y = int(input("Enter value for y: "))
+
+Equation = x**3+3*x**2*y+3*x*y**2+y**3
+print(f"The answer of the Equation is: {Equation}")
