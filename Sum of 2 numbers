@@ -1,0 +1,13 @@
+# Take input from the user
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+
+# Calculate the sum
+sum = num1 + num2
+
+# Calculate the difference
+difference = num1 - num2
+
+# Print
+print("The sum is:", sum)
+print("The difference is:", difference)
