@@ -1,0 +1,16 @@
+N = int(input("Enter the number of students: "))
+
+student_marks = {}
+
+for _ in range(N):
+    name = input("Enter the name of the student: ")
+    marks = int(input("Enter the marks of the student: "))
+    student_marks[name] = marks
+
+highest_marks = max(student_marks.values())
+lowest_marks = min(student_marks.values())
+average_marks = sum(student_marks.values()) / N
+
+print(f"Highest Marks: {highest_marks}")
+print(f"Lowest Marks: {lowest_marks}")
+print(f"Average Marks: {average_marks:.2f}")
