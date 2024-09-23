@@ -1,0 +1,11 @@
+def num(a):
+    total_sum = 0
+    for char in a:
+        total_sum += int(char)
+    return total_sum
+
+inss = input("Enter some numbers: ")
+
+result = num(inss)
+
+print("The sum of the numbers is:", result)
