@@ -1,0 +1,20 @@
+def main():
+    students={}
+    name = input("Enter your name: ")
+    marks = int(input("Enter marks: "))
+    if students:
+        highest_marks = max(students.values())
+        lowest_marks = min(students.values())
+        average_marks = sum(students.values()) / len(students)
+
+        with open("result.txt", "w") as file:
+            file.write(f"Highest Marks: {highest_marks}\n")
+            file.write(f"Lowest Marks: {lowest_marks}\n")
+            file.write(f"Average Marks: {average_marks:.2f}\n")
+
+        print("Results have been written to 'result.txt'")
+    else:
+        print("No data to process.")
+
+if __name__ == "__main__":
+    main()
