@@ -1,0 +1,12 @@
+
+def sum_of_numbers():
+    numbers_string = input("Enter a string of numbers separated by spaces: ")
+    # string into individual numbers and convert them to integers
+    numbers_list = [int(number) for number in numbers_string]
+
+    # Calculate the sum of the numbers
+    sum_of_numbers = sum(numbers_list)
+
+    print("Sum of numbers:", sum_of_numbers)
+
+sum_of_numbers()
