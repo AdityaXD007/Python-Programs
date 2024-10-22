@@ -1,0 +1,16 @@
+try:
+        Day = input("Enter a day of the week: ")
+        weekdays= ["monday", "tuesday","wedesday","thursday","friday"]
+        weekends = ["saturday","sunday"]
+
+        if Day in weekdays:
+                print("Happy Weekday!")
+        elif Day in weekends:
+                print("Happy Weekend!")
+        else:
+                raise ValueError("Invalid Input. Please enter a valid week day")
+except ValueError:
+        print("English or Spanish")
+finally:
+        print("Program completed")
+
